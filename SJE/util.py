@@ -132,7 +132,7 @@ class DATA_LOADER(object):
 
 
     def read_matdataset(self, opt):
-
+        opt.dataroot = "/kaggle/input/vgse-data/data"
         matcontent = sio.loadmat(opt.dataroot + "/" + opt.dataset + "/" + opt.image_embedding + ".mat")
         print("using the matcontent:", opt.dataroot + "/" + opt.dataset + "/" + opt.image_embedding + ".mat")
 
